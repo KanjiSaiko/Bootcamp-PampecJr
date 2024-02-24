@@ -1,0 +1,200 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS";
+}
+
+body{
+	background: #fdf1db;
+}
+
+
+#container {
+	width: 980px;
+	height: 690px;
+	margin: 0 auto;
+	background: url(imagens/fundo.png);
+}
+
+/*Cabeçalho */
+
+
+#header {
+	height: 140px;
+	background: url(imagens/aviao1.png);
+}
+
+#header h1 {
+	margin: 0px 0 10px 20px;
+	color: #5B4C2D;
+}
+
+#header span {
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+
+#header ul {
+	list-style: none;
+	float: left;
+	margin-top: 5px;
+	background: #5B4C2D;
+}
+
+#header ul li {
+	float: left;
+}
+
+
+#header ul li a{
+	line-height: 2.1em;
+	padding: 0.5em 1.5em;
+	display: block;
+	padding: 0.5em 1.7em;
+	text-decoration: none;
+	color: #FFF;
+	background: url(imagens/divisor.png) no-repeat left center;
+}
+
+#header .primeiro a {
+	background: none;
+}
+
+#header ul li a:hover {
+	background: #867042;
+	color: #F0C778;
+}
+
+
+body#home #header li a#home,
+body#paisagens #header li a#paisagens{
+	background: #867042;
+	color: #F0C778;
+}
+
+body#paisagens .caixa img{
+	width: 65%;
+}
+
+/*Fim Cabeçalho */
+
+
+/*Inicio conteudo */
+#principal {
+	margin: 15px 0 15px 0;
+}
+
+#sidebar{
+	width: 270px;
+	height: 450px;
+	float: left;
+
+	margin: 0 0 0 -975px;
+
+}
+
+#conteudo {
+	width: 690px;
+	height: 450px;
+	margin: 0 0 15px 285px;
+	float: left;
+
+}
+
+.caixa{
+	width: 500px;
+	height: 200px;
+	margin: 0 1px 5px 95px;
+	padding: 10px;
+	background: #FEE0B8;
+}
+
+.caixa img {
+	margin-top: 5px;
+	width: 230px;
+	height: 150px;
+	cursor: pointer;
+	border: 2px solid #ff9e6e;
+	float: left;
+}
+
+.caixa p{
+	width: 250px;
+	margin: 5px;
+	float: right;
+}
+
+.caixa a {
+	margin: 5px 185px 0 0;
+	float: right;
+	font-size: 15px;
+}
+
+.subtitulos {
+	background: #ff9e6e;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+.area-principal {
+	font-size: 10px;
+}
+
+
+.subtitulo-side {
+	background: #C5A75E;
+	padding: 5px;
+	padding-left: 20px;
+	border-radius: 10px 10px 0 0;
+}
+
+
+#sidebar .conteudo-sidebar ul{
+	list-style: none;
+	background: #9D854B;
+	border-radius: 0 0 10px 10px;
+}
+
+#sidebar .conteudo-sidebar ul li{
+	padding: 10px;
+
+}
+
+#sidebar .conteudo-sidebar ul a{
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: #F0C778;
+	background: #584A2A;
+	border-radius: 10px;
+}
+
+
+#sidebar .conteudo-sidebar ul a:hover{
+	background: #716036;
+	padding: 10px;
+	color: #FFF;
+}
+/*Fim do conteudo */
+
+/*Inicio rodape */
+#container-rodape {
+	width: 980px;
+	height: 70px;
+}
+
+#rodape span{
+	display: block;
+	padding-top: 25px;
+	margin-left: 350px;
+}
+
+#rodape label {
+	margin: 5px;
+	cursor: pointer;
+}
+
+
+
+/*Fim rodape */
