@@ -1,2 +1,2 @@
 # Bootcamp-PampecJr
-Desafio 1 do Bootcamp PampecJR
+Desafios propostos do Bootcamp PampecJR postados semanalmente.
