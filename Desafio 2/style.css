@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --text-color: #FFF;
+    --text-color-link: #707070;
+    --bg-url: url(imagem/bg2.png);
+    --bg-botao: rgba(255, 255, 255, 0.2);
+    --bg-botao-hover: rgba(68, 68, 68, 0.425);
+    --borda-botao: rgba(255, 255, 255, 0.5);
+    --botao-switch: url(imagem/moon-stars.svg);
+    --bg-principal: rgba(255, 255, 255, 0.123);
+    --botao-mudabg: url(imagem/switchbg.svg);
+    --switch-mudabg-botoes: url(imagem/switchbotoes-black.svg);
+}
+
+.light {
+    --text-color: #000;
+    --text-color-link: #c5c5c5;
+    --bg-url: url(imagem/bd2-light.png);
+    --bg-botao: rgba(0, 0, 0, 0.05);
+    --bg-botao-hover: rgba(68, 68, 68, 0.5);
+    --borda-botao: rgba(0, 0, 0, 0.5);
+    --botao-switch: url(imagem/sun.svg);
+}
+
+.bg-color {
+    --bg-principal: rgba(0, 0, 0, 0.151);
+    --botao-mudabg: url(imagem/switchbg2.svg);
+}
+
+.bg-botoes {
+    --bg-botao: rgba(43, 25, 25, 0.514);
+    --switch-mudabg-botoes: url(imagem/switchbotoes-white.svg);
+    
+}
+
+body {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    background: var(--bg-url) no-repeat top center/cover;
+
+}
+
+#container {
+    margin: 15px auto;
+    width: 730px;
+    height: 820px;
+    color: var(--text-color);
+    
+}
+
+/*inicio Header*/
+#header {
+    height: 90px;
+    width: 100%;
+    margin-bottom: 40px;
+    /*background: url(imagem/logo.png) no-repeat left;*/
+    background-size: 19%;
+    background-position: 10px;
+    position: relative;
+}
+
+#header img {
+    width: 120px;
+    margin-left: 70px;
+    display: inline;
+    float: left;
+    position: absolute;
+    z-index: 1;
+}
+
+#botoes {
+    margin: 50px 0 0px 275px;
+    float: left;
+
+}
+
+#botoes a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-right: 10px;
+    padding: 6px 6px;
+    background: var(--bg-botao);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    transition: background 0.3s;
+    border: 1.5px solid var(--borda-botao);
+}
+
+#botoes a:hover {
+    background: var(--bg-botao-hover);
+    
+}
+
+/*fim header*/
+
+
+/*inicio principal*/
+#principal {
+    height: 400px;
+    width: 95%;
+    margin: 15px auto;
+    background: var(--bg-principal);
+    clear: both;
+}
+
+#principal h1 {
+    padding: 5px;
+    text-align: center;
+}
+
+#principal img {
+    float: left;
+    padding: 0.5em;
+}
+
+#principal p {
+    text-align: justify;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+    float: left;
+    width: 24em;
+    padding: 2px;
+}
+
+#principal a {
+    color: var(--text-color);
+}
+
+#principal a:hover {
+    color: var(--text-color-link);
+}
+
+
+/*fim principal*/
+
+/*inicio botao*/
+#area-buttom {
+    height: 80px;
+    width: 35%;
+    margin: 50px auto;
+
+}
+
+/*inicio switch*/
+.switch {
+    float: left;
+    position: relative;
+    width: 50px;
+}
+
+.switch button {
+    width: 32px;
+    height: 32px;
+    background: #FFF var(--botao-switch) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.switch span {
+    display: block;
+    width: 50px;
+    height: 15px;
+    background: var(--bg-botao);
+    border-radius: 9999px;
+}
+
+.light .switch button {
+    right: 0;
+    left: initial;
+}
+/*fim switch*/
+
+/*inicio mudança bg*/
+.switch-bg {
+    float: left;
+    width: 50px;
+    margin-left: 150px;
+    position: relative;
+}
+
+.switch-bg span {
+    display: block;
+    width: 50px;
+    height: 15px;
+    background: var(--bg-botao);
+    border-radius: 9999px;
+}
+
+.switch-bg button {
+    width: 32px;
+    height: 32px;
+    background: #FFF var(--botao-mudabg) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.bg-color .switch-bg button {
+    right: 0;
+    left: initial;
+}
+/*fim mudança bg*/
+
+
+/*inicio bg botoes*/
+.switch-bg-botoes {
+    clear: both;
+    padding: 30px 0 0px 0;  
+    margin-left: 100px;
+    position: relative;
+    width: 50px;
+}
+
+.switch-bg-botoes span {
+    display: block;
+    width: 50px;
+    height: 15px;
+    background: var(--bg-botao);
+    border-radius: 9999px;
+}
+
+.switch-bg-botoes button {
+    margin-top: 15px;
+    width: 32px;
+    height: 32px;
+    background: #FFF var(--switch-mudabg-botoes) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.bg-botoes .switch-bg-botoes button {
+    right: 0;
+    left: initial;
+}
+
+/*fim bg botoes*/
+
+/*fim botao*/
+#rodape {
+    height: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.ref a {
+    color: #FFF;
+}
